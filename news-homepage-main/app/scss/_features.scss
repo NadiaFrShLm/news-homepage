@@ -1,0 +1,40 @@
+.features {
+  flex-direction: column;
+  gap: 3.3rem;
+  margin-bottom: 8rem;
+
+  @include breakpoint-up(medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 13rem;
+    grid-column: 1 / -1;
+    gap: 2.5rem;
+  }
+
+  .feature {
+    gap: 2.5rem;
+    flex: 1;
+
+    &__img {
+      width: 11rem;
+      height: 13rem;
+    }
+    &__wrapper {
+      h2 {
+        color: $grayishBlue;
+        margin-bottom: 1rem;
+        line-height: 1;
+      }
+      h3 {
+        color: $veryDarkBlue;
+        font-size: 1.7rem;
+        font-weight: 800;
+        cursor: pointer;
+
+        &:hover {
+          color: $softRed;
+        }
+      }
+    }
+  }
+}

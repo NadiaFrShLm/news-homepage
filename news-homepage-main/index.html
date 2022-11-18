@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <title>News homepage</title>
+
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay"></div>
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="assets/images/logo.svg" alt="news logo" />
+        </a>
+        <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobail">
+          <a href="#hero">Home</a>
+          <a href="#news">New</a>
+          <a href="#popular">Popular</a>
+          <a href="#">Trending</a>
+          <a href="#">Categories</a>
+        </div>
+      </nav>
+      <!-- pop up menu -->
+      <div class="header__menu hide-for-desktop">
+        <a class="menu-link" href="#hero">Home</a>
+        <a class="menu-link" href="#news">New</a>
+        <a class="menu-link" href="#popular">Popular</a>
+        <a class="menu-link" href="#">Trending</a>
+        <a class="menu-link" href="#">Categories</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__img">
+          <picture>
+            <source
+              srcset="assets/images/image-web-3-desktop.jpg"
+              media="(min-width:640px)"
+            />
+            <img
+              src="assets/images/image-web-3-mobile.jpg"
+              alt="hero section image"
+            />
+          </picture>
+        </div>
+        <div class="hero__text">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div>
+            <p class="hero__description">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button class="cta">Read more</button>
+          </div>
+        </div>
+      </section>
+      <section class="news" id="news">
+        <h2>New</h2>
+        <div class="news__article">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+
+        <div class="news__article">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="news__article">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </section>
+      <section class="features flex" id="popular">
+        <!-- 1 -->
+        <div class="feature flex">
+          <img
+            class="feature__img"
+            src="assets/images/image-retro-pcs.jpg"
+            alt="retro PC"
+          />
+          <div class="feature__wrapper">
+            <h2>01</h2>
+            <h3>Reviving Retro PCs</h3>
+            <p class="feature__text">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="feature flex">
+          <img
+            class="feature__img"
+            src="assets/images/image-top-laptops.jpg"
+            alt="laptop"
+          />
+
+          <div class="feature__wrapper">
+            <h2>02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p class="feature__text">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="feature flex">
+          <img
+            class="feature__img"
+            src="assets/images/image-gaming-growth.jpg"
+            alt="Gaiming console"
+          />
+          <div class="feature__wrapper">
+            <h2>03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p class="feature__text">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app/js/script.js"></script>
+  </body>
+</html>
